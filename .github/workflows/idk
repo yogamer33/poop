@@ -1,0 +1,27 @@
+
+from random import choice 
+objects =["rock", "paper","scissor"]
+computer = choice(objects)
+rps=input("What are you going to choose rock,paper,scissor?").lower() .strip()
+if rps == computer:
+  print ("Computer picked the same,it is a tie!") 
+if rps == ("rock"):
+  if computer == ("scissor"):
+    print ("Good Job")
+if rps == ("paper"):
+  if  computer == ("rock"):
+    print ("Good Job")
+if rps == ("scissor"):
+  if  computer == ("paper"):
+    print ("Good Job")
+if computer == ("scissor"):
+  if rps == ("paper"):
+    print("Noooo! you lost :C ")
+if computer == ("paper"):
+  if rps == ("rock"):
+    print("Noooo! you lost :C ")
+if computer == ("rock"):
+  if rps == ("scissor"):
+    print("Noooo! you lost :C ")
+print ("Thanks for playing")
+  
